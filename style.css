@@ -1,6 +1,6 @@
 :root{
-    --background-color: #fff;
-    --text-color: #000;
+    --background-color: rgb(254,210,74);
+    --text-color: #fff;
     --title-color: #000;
     --banner-color: rgb(45,13,109);
     --banner-text: rgb(232,171,59);
@@ -10,9 +10,14 @@
 }
 
 body{
-    background-color:antiquewhite;
+    background: var(--background-color);
     color: var(--text-color);
-    align-items: center;
+    transition: background 0.8s, color 0.8s;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    margin: 0;
 
 }
 
@@ -25,11 +30,47 @@ label{
     display: block;
     text-align: center;
 }
-
 input{
-    align-self: center;
-}
-.link{
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    margin: 10px 0 0 0; 
+    width: 40%;
+    min-width: 100px;
+    min-height: 2em;
     display: block;
+    margin-left: auto;  /* Center the element horizontally */
+    margin-right: auto;
+    
+
+}
+button{
+    
+    display: block;
+    margin-left: auto;  /* Center the element horizontally */
+    margin-right: auto;
+}
+
+
+/* DARK MODE */
+.dark-mode{
+    background-color:  #121212;
+    color: #fff;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.dark-theme{
+    --background-color: #121212;
+    --text-color: #fff;
+    --title-color: #fff;
+    --box-color: #fff;
+    --box-text: #121212;
+    --banner-color: rgb(232,171,59); 
+    --banner-text: rgb(45,13,109);
 }
