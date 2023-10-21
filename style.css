@@ -1,0 +1,35 @@
+:root{
+    --background-color: #fff;
+    --text-color: #000;
+    --title-color: #000;
+    --banner-color: rgb(45,13,109);
+    --banner-text: rgb(232,171,59);
+    --box-color: #121212;
+    --box-text: #fff;
+
+}
+
+body{
+    background-color:antiquewhite;
+    color: var(--text-color);
+    align-items: center;
+
+}
+
+h1{
+    text-align: center;
+    display: block;
+}
+
+label{
+    display: block;
+    text-align: center;
+}
+
+input{
+    align-self: center;
+}
+.link{
+    display: block;
+    align-items: center;
+}
